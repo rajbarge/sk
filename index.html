@@ -1,17 +1,36 @@
 <!DOCTYPE html><html lang="en"><head>
+  
+    <meta charset="utf-8">
+    <title>AngularPwa</title>
+    <!-- <base href="http://theskenterprises.in/Angular-pwa/"> -->
+    <base href="./">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
 
-  <meta charset="utf-8">
-  <title>AngularPwa</title>
-  <!-- <base href="http://theskenterprises.in/Angular-pwa/"> -->
-  <base href="./">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#1976d2">
-<link rel="stylesheet" href="styles.31d6cfe0d16ae931b73c.css"></head>
-<body>
-  <app-root></app-root>
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
-<script src="runtime.36949cac575183e83a59.js" defer></script><script src="polyfills.66d8d8e37dc147f4d85c.js" defer></script><script src="main.5dd4ccf0368be859909b.js" defer></script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1976d2">
+  <link rel="stylesheet" href="styles.31d6cfe0d16ae931b73c.css"></head>
+  <body>
+    <script>
+      navigator.serviceWorker.register('/service-worker.js').then(function(registration){
+        console.log('01 fire base raj sir service wker registration succesfull :', registration);
+      }, function(err){
+        console.log(' 02 fire base raj sir failed', err);
+      
+      })
+    </script>
+    <script type="text/javascript">
 
+      // navigator.serviceWorker.register('/myproject/scripts/common/pushNotifications/sw.js').then(function(registration) {
+      // console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      //      }, function(err) {
+      // console.log('ServiceWorker registration failed: ', err);
+      // });
+      
+</script>
+    <app-root></app-root>
+    <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <script src="runtime.3460106cf878787bb141.js" defer></script><script src="polyfills.52a65a8545a355c5b662.js" defer></script><script src="main.5f9bdfab53008ea9b960.js" defer></script>
+  
 </body></html>
