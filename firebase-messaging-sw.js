@@ -12,15 +12,26 @@ importScripts('https://www.gstatic.com/firebasejs/7.6.0/firebase-messaging.js');
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 
-firebase.initializeApp({
-    apiKey: "AIzaSyA0jcIfBeY58fXPCiD6NRccp0N2dmBeqtc",
+// firebase.initializeApp({
+//     apiKey: "AIzaSyA0jcIfBeY58fXPCiD6NRccp0N2dmBeqtc",
+//   authDomain: "sk-web-e14b2.firebaseapp.com",
+//   projectId: "sk-web-e14b2",
+//   storageBucket: "sk-web-e14b2.appspot.com",
+//   messagingSenderId: "255843477465",
+//   appId: "1:255843477465:web:eee64a50a32fd9b8869bc8",
+//   measurementId: "G-N2TB24J4PP"
+// });
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA0jcIfBeY58fXPCiD6NRccp0N2dmBeqtc",
   authDomain: "sk-web-e14b2.firebaseapp.com",
+  databaseURL: "https://sk-web-e14b2-default-rtdb.firebaseio.com",
   projectId: "sk-web-e14b2",
   storageBucket: "sk-web-e14b2.appspot.com",
   messagingSenderId: "255843477465",
   appId: "1:255843477465:web:eee64a50a32fd9b8869bc8",
   measurementId: "G-N2TB24J4PP"
-});
+};
 const messaging = firebase.messaging();
 const app = initializeApp(firebase);
 const analytics = getAnalytics(app);
