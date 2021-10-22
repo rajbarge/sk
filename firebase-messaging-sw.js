@@ -32,17 +32,8 @@ const firebaseConfig = {
   appId: "1:255843477465:web:eee64a50a32fd9b8869bc8",
   measurementId: "G-N2TB24J4PP"
 };
-alert("register code added 22-10-2021");
 
-if ('serviceWorker' in navigator) {
-navigator.serviceWorker.register('../firebase-messaging-sw.js')
-  .then(function(registration) {
-    console.log('Registration successful, scope is:', registration.scope);
-  }).catch(function(err) {
-    console.log('Service worker registration failed, error:', err);
-  });
-}
 const messaging = firebase.messaging();
 const app = initializeApp(firebase);
 const analytics = getAnalytics(app);
-alert("register code added 22-10-2021");
+//alert("register code added 22-10-2021");
